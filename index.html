@@ -7,12 +7,12 @@
     <title>ShopPulse — Le commerce local, connecté</title>
     <meta name="description"
         content="ShopPulse connecte les mairies, les commerçants et les habitants autour du commerce local. Offres, actualités, événements : tout en un.">
+    <script src="https://kit.fontawesome.com/b958a7bf3e.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,300&display=swap"
         rel="stylesheet">
-        <script src="https://kit.fontawesome.com/b958a7bf3e.js" crossorigin="anonymous"></script>
 
     <style>
         :root {
@@ -83,7 +83,6 @@
             border-radius: 8px;
             display: flex; align-items: center; justify-content: center;
         }
-        .nav-logo-icon svg { width: 18px; height: 18px; fill: white; }
 
         .nav-logo-text {
             font-family: var(--font-display);
@@ -159,7 +158,6 @@
             font-size: var(--text-md);
             line-height: 1.65; color: rgba(255, 255, 255, 0.62);
             max-width: 480px; margin-bottom: 44px;
-            text-align: justify;
         }
 
         .hero-actions { display: flex; align-items: center; gap: 16px; flex-wrap: wrap; }
@@ -245,7 +243,7 @@
         .phone-tab { display: flex; flex-direction: column; align-items: center; gap: 2px; }
         .phone-tab-label { font-size: 8px; color: rgba(255, 255, 255, 0.4); }
         .phone-tab.active .phone-tab-label { color: var(--orange); }
-        .phone-tab-icon { width: 18px; height: 18px; }
+        .phone-tab-icon { width: 18px; height: 18px; font-size: 15px; text-align: center; }
 
         .hero-badge, .hero-badge-2 {
             position: absolute; background: white; border-radius: 12px;
@@ -539,7 +537,6 @@
 
         .footer-logo { display: flex; align-items: center; gap: 10px; text-decoration: none; }
         .footer-logo-icon { width: 28px; height: 28px; background: var(--orange); border-radius: 7px; display: flex; align-items: center; justify-content: center; }
-        .footer-logo-icon svg { width: 15px; height: 15px; fill: white; }
         .footer-logo-text { font-family: var(--font-display); font-size: clamp(15px, 1.3vw, 18px); color: white; }
         .footer-links { display: flex; gap: 32px; flex-wrap: wrap; }
         .footer-links a { font-size: var(--text-sm); color: rgba(255, 255, 255, 0.4); text-decoration: none; transition: color 0.2s; }
@@ -576,15 +573,13 @@
     <nav>
         <a href="#" class="nav-logo">
             <div class="nav-logo-icon">
-                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
-                </svg>
+                <i class="fa-solid fa-location-dot" style="color:white; font-size:16px;"></i>
             </div>
             <span class="nav-logo-text">ShopPulse</span>
         </a>
         <a href="#contact" class="nav-cta">
             Demander une démo
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            <i class="fa-solid fa-arrow-right" style="font-size:12px;"></i>
         </a>
     </nav>
 
@@ -598,7 +593,7 @@
                 <div class="hero-actions">
                     <a href="#contact" class="btn-primary">
                         Demander une démo gratuite
-                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                        <i class="fa-solid fa-arrow-right" style="font-size:13px;"></i>
                     </a>
                     <a href="#fonctionnement" class="btn-ghost">Voir comment ça marche</a>
                 </div>
@@ -606,7 +601,7 @@
 
             <div class="hero-visual">
                 <div class="hero-badge">
-                    <div class="badge-icon" style="background:#FEF3E2;">📍</div>
+                    <div class="badge-icon" style="background:#FEF3E2;"><i class="fa-solid fa-location-dot" style="color:var(--orange); font-size:18px;"></i></div>
                     <div>
                         <div class="badge-text-main">Calais, Pas-de-Calais</div>
                         <div class="badge-text-sub">132 commerces connectés</div>
@@ -630,21 +625,21 @@
                         </div>
                         <div class="phone-section-label">Actualités locales</div>
                         <div class="phone-mini-card">
-                            <div class="phone-mini-icon" style="background: rgba(240,112,48,0.15);">🛍</div>
+                            <div class="phone-mini-icon" style="background: rgba(240,112,48,0.15);"><i class="fa-solid fa-bag-shopping" style="color:var(--orange); font-size:13px;"></i></div>
                             <div>
                                 <div class="phone-mini-title">Marché de Noël — Place d'Armes</div>
                                 <div class="phone-mini-sub">Samedi 14 déc · 48 exposants</div>
                             </div>
                         </div>
                         <div class="phone-mini-card">
-                            <div class="phone-mini-icon" style="background: rgba(42,157,143,0.15);">📣</div>
+                            <div class="phone-mini-icon" style="background: rgba(42,157,143,0.15);"><i class="fa-solid fa-bullhorn" style="color:var(--teal); font-size:13px;"></i></div>
                             <div>
                                 <div class="phone-mini-title">Message de la mairie</div>
                                 <div class="phone-mini-sub">Fermeture rue Mollien — il y a 2h</div>
                             </div>
                         </div>
                         <div class="phone-mini-card">
-                            <div class="phone-mini-icon" style="background: rgba(45,106,79,0.15);">🌿</div>
+                            <div class="phone-mini-icon" style="background: rgba(45,106,79,0.15);"><i class="fa-solid fa-leaf" style="color:var(--green); font-size:13px;"></i></div>
                             <div>
                                 <div class="phone-mini-title">Pharmacie des Flandres</div>
                                 <div class="phone-mini-sub">Nouveau : rayon bio certifié</div>
@@ -652,19 +647,19 @@
                         </div>
                         <div class="phone-tab-bar">
                             <div class="phone-tab active">
-                                <svg class="phone-tab-icon" viewBox="0 0 24 24" fill="none" stroke="rgba(240,112,48,1)" stroke-width="2" stroke-linecap="round"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/></svg>
+                                <i class="fa-solid fa-house phone-tab-icon" style="color:var(--orange);"></i>
                                 <div class="phone-tab-label" style="color:rgba(240,112,48,1)">Accueil</div>
                             </div>
                             <div class="phone-tab">
-                                <svg class="phone-tab-icon" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,0.35)" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/></svg>
+                                <i class="fa-solid fa-magnifying-glass phone-tab-icon" style="color:rgba(255,255,255,0.35);"></i>
                                 <div class="phone-tab-label">Explorer</div>
                             </div>
                             <div class="phone-tab">
-                                <svg class="phone-tab-icon" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,0.35)" stroke-width="2" stroke-linecap="round"><path d="M18 8A6 6 0 006 8c0 7-3 9-3 9h18s-3-2-3-9M13.73 21a2 2 0 01-3.46 0"/></svg>
+                                <i class="fa-solid fa-bell phone-tab-icon" style="color:rgba(255,255,255,0.35);"></i>
                                 <div class="phone-tab-label">Alertes</div>
                             </div>
                             <div class="phone-tab">
-                                <svg class="phone-tab-icon" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,0.35)" stroke-width="2" stroke-linecap="round"><path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+                                <i class="fa-solid fa-user phone-tab-icon" style="color:rgba(255,255,255,0.35);"></i>
                                 <div class="phone-tab-label">Profil</div>
                             </div>
                         </div>
@@ -672,7 +667,7 @@
                 </div>
 
                 <div class="hero-badge-2">
-                    <div class="badge-icon" style="background:#EBF6F5;">📊</div>
+                    <div class="badge-icon" style="background:#EBF6F5;"><i class="fa-solid fa-chart-line" style="color:var(--teal); font-size:18px;"></i></div>
                     <div>
                         <div class="badge-text-main">+340 vues ce mois</div>
                         <div class="badge-text-sub">Tableau de bord mairie</div>
@@ -692,7 +687,7 @@
             <div class="audience-grid">
                 <div class="audience-card mairie fade-up">
                     <div class="audience-who">
-                        <div class="audience-icon">🏛</div>
+                        <div class="audience-icon"><i class="fa-solid fa-landmark"></i></div>
                         <div class="audience-role">Mairies &amp; communes</div>
                     </div>
                     <h3 class="audience-title">Pilotez votre économie locale</h3>
@@ -707,7 +702,7 @@
 
                 <div class="audience-card commercant fade-up">
                     <div class="audience-who">
-                        <div class="audience-icon">🏘</div>
+                        <div class="audience-icon"><i class="fa-solid fa-city"></i></div>
                         <div class="audience-role">Communautés de communes</div>
                     </div>
                     <h3 class="audience-title">Fédérez le commerce à l'échelle intercommunale</h3>
@@ -722,7 +717,7 @@
 
                 <div class="audience-card citoyen fade-up">
                     <div class="audience-who">
-                        <div class="audience-icon">🛍</div>
+                        <div class="audience-icon"><i class="fa-solid fa-store"></i></div>
                         <div class="audience-role">Associations &amp; commerçants</div>
                     </div>
                     <h3 class="audience-title">Donnez de la visibilité à vos adhérents</h3>
@@ -740,18 +735,18 @@
             <div class="habitants-block fade-up">
                 <div class="habitants-left">
                     <div class="audience-who">
-                        <div class="habitants-icon">👥<i class="fa-solid fa-people-group"></i></div>
+                        <div class="habitants-icon"><i class="fa-solid fa-people-group" style="color:var(--teal-light);"></i></div>
                         <div class="habitants-label">Pour les habitants</div>
                     </div>
                     <h3 class="habitants-title">L'application citoyenne, accessible à tous</h3>
                     <p class="habitants-desc">Les habitants ont accès aux offres des commerçants locaux, aux actualités, aux marchés et aux événements de leur commune — ainsi qu'aux messages officiels de la mairie.<br>Disponible sur mobile (iOS &amp; Android) et sur Internet.</p>
                 </div>
                 <div class="habitants-features">
-                    <div class="habitants-feature"><span class="hf-icon">📍</span><span>Commerces géolocalisés à proximité</span></div>
-                    <div class="habitants-feature"><span class="hf-icon">🔔</span><span>Alertes et bons plans en temps réel</span></div>
-                    <div class="habitants-feature"><span class="hf-icon">📅</span><span>Agenda des marchés et événements locaux</span></div>
-                    <div class="habitants-feature"><span class="hf-icon">📣</span><span>Messages officiels de la commune</span></div>
-                    <div class="habitants-feature"><span class="hf-icon">📱</span><span>App mobile iOS &amp; Android + version web</span></div>
+                    <div class="habitants-feature"><span class="hf-icon"><i class="fa-solid fa-location-dot" style="color:var(--teal);"></i></span><span>Commerces géolocalisés à proximité</span></div>
+                    <div class="habitants-feature"><span class="hf-icon"><i class="fa-solid fa-bell" style="color:var(--teal);"></i></span><span>Alertes et bons plans en temps réel</span></div>
+                    <div class="habitants-feature"><span class="hf-icon"><i class="fa-solid fa-calendar-days" style="color:var(--teal);"></i></span><span>Agenda des marchés et événements locaux</span></div>
+                    <div class="habitants-feature"><span class="hf-icon"><i class="fa-solid fa-bullhorn" style="color:var(--teal);"></i></span><span>Messages officiels de la commune</span></div>
+                    <div class="habitants-feature"><span class="hf-icon"><i class="fa-solid fa-mobile-screen" style="color:var(--teal);"></i></span><span>App mobile iOS &amp; Android + version web</span></div>
                 </div>
             </div>
 
@@ -759,17 +754,17 @@
             <div class="habitants-block fade-up" style="margin-top: 24px;">
                 <div class="habitants-left">
                     <div class="audience-who">
-                        <div class="habitants-icon">🧳</div>
+                        <div class="habitants-icon"><i class="fa-solid fa-suitcase-rolling" style="color:var(--orange-light);"></i></div>
                         <div class="habitants-label" style="color: var(--orange-light);">Pour les touristes</div>
                     </div>
                     <h3 class="habitants-title">Découvrir le commerce local, dès l'arrivée</h3>
                     <p class="habitants-desc">Les visiteurs de passage accèdent à la même application et aux mêmes informations : commerces ouverts à proximité, marchés du week-end, événements locaux — une <strong>vitrine du territoire</strong> accessible à tous, à tout moment.</p>
                 </div>
                 <div class="habitants-features">
-                    <div class="habitants-feature"><span class="hf-icon" style="background: rgba(240,112,48,0.12);">🔍</span><span>Recherche de commerces et services à proximité</span></div>
-                    <div class="habitants-feature"><span class="hf-icon" style="background: rgba(240,112,48,0.12);">🗓</span><span>Marchés et événements locaux du moment</span></div>
-                    <div class="habitants-feature"><span class="hf-icon" style="background: rgba(240,112,48,0.12);">📲</span><span>Accessible sans inscription, depuis le web</span></div>
-                    <div class="habitants-feature"><span class="hf-icon" style="background: rgba(240,112,48,0.12);">🌍</span><span>Valorise l'attractivité du territoire</span></div>
+                    <div class="habitants-feature"><span class="hf-icon" style="background: rgba(240,112,48,0.12);"><i class="fa-solid fa-magnifying-glass" style="color:var(--orange);"></i></span><span>Recherche de commerces et services à proximité</span></div>
+                    <div class="habitants-feature"><span class="hf-icon" style="background: rgba(240,112,48,0.12);"><i class="fa-solid fa-calendar-day" style="color:var(--orange);"></i></span><span>Marchés et événements locaux du moment</span></div>
+                    <div class="habitants-feature"><span class="hf-icon" style="background: rgba(240,112,48,0.12);"><i class="fa-solid fa-globe" style="color:var(--orange);"></i></span><span>Accessible sans inscription, depuis le web</span></div>
+                    <div class="habitants-feature"><span class="hf-icon" style="background: rgba(240,112,48,0.12);"><i class="fa-solid fa-star" style="color:var(--orange);"></i></span><span>Valorise l'attractivité du territoire</span></div>
                 </div>
             </div>
 
@@ -783,32 +778,32 @@
             <h2 class="section-title">Tout ce qu'il faut pour animer le commerce local</h2>
             <div class="features-grid">
                 <div class="feature-item fade-up">
-                    <div class="feature-icon-wrap" style="background:#FEF0E8;">📣</div>
+                    <div class="feature-icon-wrap" style="background:#FEF0E8;"><i class="fa-solid fa-bullhorn" style="color:var(--orange);"></i></div>
                     <h3 class="feature-title">Communication directe</h3>
                     <p class="feature-desc">Les mairies diffusent des messages ciblés aux commerçants, aux habitants ou à un quartier précis. Plus besoin de passer par des canaux fragmentés.</p>
                 </div>
                 <div class="feature-item fade-up">
-                    <div class="feature-icon-wrap" style="background:#EBF6F5;">📊</div>
+                    <div class="feature-icon-wrap" style="background:#EBF6F5;"><i class="fa-solid fa-chart-bar" style="color:var(--teal);"></i></div>
                     <h3 class="feature-title">Analytics en temps réel</h3>
                     <p class="feature-desc">Tableaux de bord synthétiques pour les mairies (activité commerciale, taux d'engagement) et pour les commerçants (vues, clics sur les offres).</p>
                 </div>
                 <div class="feature-item fade-up">
-                    <div class="feature-icon-wrap" style="background:#E8F0F8;">🗺</div>
+                    <div class="feature-icon-wrap" style="background:#E8F0F8;"><i class="fa-solid fa-map-location-dot" style="color:#3B7FC4;"></i></div>
                     <h3 class="feature-title">Carte des commerces</h3>
                     <p class="feature-desc">Chaque commerce est géolocalisé sur la carte interactive. Les habitants trouvent facilement les boutiques, marchés et événements près de chez eux.</p>
                 </div>
                 <div class="feature-item fade-up">
-                    <div class="feature-icon-wrap" style="background:#EEF5EA;">🏪</div>
+                    <div class="feature-icon-wrap" style="background:#EEF5EA;"><i class="fa-solid fa-tent-arrow-turn-left" style="color:var(--green);"></i></div>
                     <h3 class="feature-title">Gestion des marchés</h3>
                     <p class="feature-desc">Planification des marchés permanents et événementiels, avec liste des exposants, horaires, et notifications aux abonnés.</p>
                 </div>
                 <div class="feature-item fade-up">
-                    <div class="feature-icon-wrap" style="background:#FEF0E8;">🔔</div>
+                    <div class="feature-icon-wrap" style="background:#FEF0E8;"><i class="fa-solid fa-bell" style="color:var(--orange);"></i></div>
                     <h3 class="feature-title">Notifications push</h3>
                     <p class="feature-desc">Les commerçants alertent leurs abonnés en temps réel. Les habitants restent informés des bons plans du moment sans effort.</p>
                 </div>
                 <div class="feature-item fade-up">
-                    <div class="feature-icon-wrap" style="background:#EBF6F5;">🔐</div>
+                    <div class="feature-icon-wrap" style="background:#EBF6F5;"><i class="fa-solid fa-shield-halved" style="color:var(--teal);"></i></div>
                     <h3 class="feature-title">Conforme RGPD</h3>
                     <p class="feature-desc">Données hébergées en Europe, aucun stockage de géolocalisation des habitants, gestion des consentements intégrée.</p>
                 </div>
@@ -821,28 +816,28 @@
         <div class="section-inner">
             <div class="keypoints-list">
                 <div class="keypoint-item fade-up">
-                    <div class="keypoint-icon">🎁</div>
+                    <div class="keypoint-icon"><i class="fa-solid fa-gift"></i></div>
                     <div>
                         <div class="keypoint-title">Gratuit pour les commerçants et les habitants</div>
                         <div class="keypoint-desc">L'accès à ShopPulse est offert aux commerçants et aux habitants dans le cadre du déploiement communal. Seule la structure porteuse (mairie, EPCI, association) souscrit un abonnement.</div>
                     </div>
                 </div>
                 <div class="keypoint-item fade-up">
-                    <div class="keypoint-icon">∞</div>
+                    <div class="keypoint-icon"><i class="fa-solid fa-infinity"></i></div>
                     <div>
                         <div class="keypoint-title">Pas de limite</div>
                         <div class="keypoint-desc">Aucun plafond sur le nombre d'offres publiées, de commerces référencés, de messages envoyés ou d'habitants inscrits.</div>
                     </div>
                 </div>
                 <div class="keypoint-item fade-up">
-                    <div class="keypoint-icon">🛍</div>
+                    <div class="keypoint-icon"><i class="fa-solid fa-store"></i></div>
                     <div>
                         <div class="keypoint-title">Les commerçants sont indépendants</div>
                         <div class="keypoint-desc">Chaque commerçant gère sa vitrine en totale autonomie — publication d'offres, actualités, photos — sans passer par la mairie ni attendre une validation.</div>
                     </div>
                 </div>
                 <div class="keypoint-item fade-up">
-                    <div class="keypoint-icon">🚀</div>
+                    <div class="keypoint-icon"><i class="fa-solid fa-bolt"></i></div>
                     <div>
                         <div class="keypoint-title">Déploiement rapide</div>
                         <div class="keypoint-desc">ShopPulse est opérationnel en quelques jours. Nous accompagnons la structure porteuse et les commerçants à chaque étape : paramétrage, formation et communication de lancement.</div>
@@ -972,7 +967,7 @@
 
                         <a href="#" class="form-submit" id="submit-btn" onclick="handleSubmit(event)">
                             Envoyer ma demande
-                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z"/></svg>
+                            <i class="fa-solid fa-paper-plane" style="font-size:14px;"></i>
                         </a>
                         <p class="form-note">Réponse garantie sous 24h · Sans engagement</p>
                     </div>
@@ -992,9 +987,7 @@
         <div class="footer-inner">
             <a href="#" class="footer-logo">
                 <div class="footer-logo-icon">
-                    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
-                    </svg>
+                    <i class="fa-solid fa-location-dot" style="color:white; font-size:14px;"></i>
                 </div>
                 <span class="footer-logo-text">ShopPulse</span>
             </a>
